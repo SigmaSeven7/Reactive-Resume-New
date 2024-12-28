@@ -32,6 +32,12 @@ jobs:
           cache: "pnpm"
           node-version: '>=20.x'
 
+      # - name: Install Dependencies
+      #   run: pnpm install --frozen-lockfile
+
+      - name: Install Latest PNPM
+        run: npm install -g pnpm@latest # Install the latest version of PNPM
+
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
