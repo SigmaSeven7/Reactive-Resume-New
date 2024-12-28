@@ -24,6 +24,9 @@
 // };
 
 
+// import { useQuery } from "@tanstack/react-query";
+// import { RESUME_PREVIEW_KEY } from "@/client/constants/query-keys";
+
 import { UrlDto } from "@reactive-resume/dto";
 import { ResumeData } from "@reactive-resume/schema";
 import { useCallback, useEffect, useRef } from "react";
@@ -43,7 +46,7 @@ export const useResumePreview = (resume: ResumeData) => {
 
     const message = {
       type: "SET_RESUME",
-      payload: resume
+      payload: resume,
     };
 
     (() => {
