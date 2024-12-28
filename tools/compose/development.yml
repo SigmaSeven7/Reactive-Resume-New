@@ -44,13 +44,14 @@ services:
     image: ghcr.io/browserless/chromium:latest
     restart: unless-stopped
     ports:
-      - ${CHROME_PORT:-8080}:3000
+      # - ${CHROME_PORT:-8080}:3000
+      - "8080:3000"
     environment:
       TIMEOUT: 10000
       CONCURRENT: 10
-      TOKEN: ${CHROME_TOKEN:-chrome_token}
+      TOKEN: ${CHROME_TOKEN}
       EXIT_ON_HEALTH_FAILURE: true
-      PRE_REQUEST_HEALTH_CHECK: true
+      HEALTH: true
 
 volumes:
   minio_data:

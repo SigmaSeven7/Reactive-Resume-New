@@ -26,7 +26,7 @@ services:
     command: server /data --console-address ":9001"
     ports:
       - "${MINIO_PORT:-9000}:9000"
-      - "9001:9001"  # MinIO Console port
+      - "9001:9001" # MinIO Console port
     volumes:
       - minio_data:/data
     environment:
@@ -58,7 +58,7 @@ services:
 
   # Main Application (Frontend)
   app:
-    image: amruthpillai/reactive-resume:latest
+    image: oryan777/reactive-resume:latest
     restart: unless-stopped
     ports:
       - "${APP_PORT:-3000}:3000"
