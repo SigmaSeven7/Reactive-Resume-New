@@ -23,7 +23,6 @@
 //   return { url: data?.url, loading, error };
 // };
 
-
 // import { useQuery } from "@tanstack/react-query";
 // import { RESUME_PREVIEW_KEY } from "@/client/constants/query-keys";
 

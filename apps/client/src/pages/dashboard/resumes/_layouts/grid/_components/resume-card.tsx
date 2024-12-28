@@ -24,7 +24,6 @@
 
 // import { BaseCard } from "./base-card";
 
-
 // type Props = {
 //   resume: ResumeDto;
 // };
@@ -118,7 +117,6 @@
 //     </ContextMenu>
 //   );
 // };
-
 
 import { t } from "@lingui/macro";
 import {
