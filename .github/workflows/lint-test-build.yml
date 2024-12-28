@@ -32,33 +32,11 @@ jobs:
           cache: "pnpm"
           node-version: ">=20.x"
 
-      # - name: Install Dependencies
-      #   run: pnpm install --frozen-lockfile
-
-      - name: Install Latest PNPM
-        run: npm install -g pnpm@latest # Install the latest version of PNPM
-
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
       - name: Lint
         run: pnpm lint
-
-      - name: Debug Info
-        run: |
-          node -v
-          pnpm -v
-          pnpm exec prettier -c .
-          git status
-          ls -la
-
-      - name: Debug Info
-        run: |
-          node -v
-          pnpm -v
-          pnpm exec prettier -c .
-          git status
-          ls -la
 
       - name: Format
         run: pnpm format:check
