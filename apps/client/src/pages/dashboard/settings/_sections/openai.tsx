@@ -232,7 +232,6 @@
 //   );
 // };
 
-
 import { zodResolver } from "@hookform/resolvers/zod";
 import { t, Trans } from "@lingui/macro";
 import { FloppyDisk, TrashSimple } from "@phosphor-icons/react";
@@ -254,10 +253,7 @@ import { z } from "zod";
 import { DEFAULT_MAX_TOKENS, DEFAULT_MODEL } from "@/client/constants/llm";
 import { useOpenAiStore } from "@/client/stores/openai";
 
-
 export const OpenAISettings = () => {
-
-
   const formSchema = z.object({
     apiKey: z
       .string()
@@ -271,7 +267,7 @@ export const OpenAISettings = () => {
     model: z.string().default(DEFAULT_MODEL),
     maxTokens: z.number().default(DEFAULT_MAX_TOKENS),
   });
-  
+
   type FormValues = z.infer<typeof formSchema>;
 
   const { apiKey, setApiKey, baseURL, setBaseURL, model, setModel, maxTokens, setMaxTokens } =
