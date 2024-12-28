@@ -25,11 +25,9 @@
 
 
 import { UrlDto } from "@reactive-resume/dto";
-import { useQuery } from "@tanstack/react-query";
 import { ResumeData } from "@reactive-resume/schema";
 import { useCallback, useEffect, useRef } from "react";
 
-import { RESUME_PREVIEW_KEY } from "@/client/constants/query-keys";
 import { axios } from "@/client/libs/axios";
 
 export const previewResume = async (data: { id: string }) => {
