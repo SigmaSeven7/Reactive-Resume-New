@@ -231,7 +231,7 @@
 //     </div>
 //   );
 // };
-
+// prettier-ignore
 import { zodResolver } from "@hookform/resolvers/zod";
 import { t, Trans } from "@lingui/macro";
 import { FloppyDisk, TrashSimple } from "@phosphor-icons/react";
