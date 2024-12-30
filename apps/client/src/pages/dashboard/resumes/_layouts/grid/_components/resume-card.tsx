@@ -150,7 +150,7 @@ type Props = {
 };
 
 export const ResumeCard = ({ resume }: Props) => {
-  const frameRef = useResumePreview({
+  const { frameRef, previewUrl } = useResumePreview({
     ...resume.data,
     metadata: {
       ...resume.data.metadata,
@@ -194,11 +194,25 @@ export const ResumeCard = ({ resume }: Props) => {
               src="/artboard/preview"
               scrolling="no"
               style={{
-                height: "100%",
-                width: "100%",
-                zoom: 0.51,
+                position: "absolute",
+                opacity: 0,
+                pointerEvents: "none",
+                zIndex: -1,
               }}
             />
+
+            {previewUrl && previewUrl !== "data:," && (
+              <div className="relative w-full">
+                <img
+                  src={previewUrl}
+                  alt={resume.title}
+                  className="w-full h-full"
+                  style={{
+                    transformOrigin: "top left",
+                  }}
+                />
+              </div>
+            )}
           </AnimatePresence>
 
           <AnimatePresence>
