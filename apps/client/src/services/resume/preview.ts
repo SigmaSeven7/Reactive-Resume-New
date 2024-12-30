@@ -27,7 +27,11 @@
 // // // import { RESUME_PREVIEW_KEY } from "@/client/constants/query-keys";
 
 // preview.ts
+/* eslint-disable unicorn/no-abusive-eslint-disable */
 /* eslint-disable */
+
+// filepath: /c:/Users/Oryan/Reactive-Resume-New/apps/client/src/services/resume/preview.ts
+
 import { ResumeData } from "@reactive-resume/schema";
 import { useCallback, useEffect, useRef, useState } from "react";
 import html2canvas from "html2canvas";

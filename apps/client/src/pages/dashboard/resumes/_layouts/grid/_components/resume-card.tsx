@@ -206,7 +206,7 @@ export const ResumeCard = ({ resume }: Props) => {
                 <img
                   src={previewUrl}
                   alt={resume.title}
-                  className="w-full h-full"
+                  className="size-full"
                   style={{
                     transformOrigin: "top left",
                   }}
