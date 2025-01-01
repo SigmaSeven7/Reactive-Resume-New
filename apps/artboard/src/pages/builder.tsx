@@ -41,7 +41,7 @@ export const BuilderLayout = () => {
       ref={transformRef}
       centerOnInit
       maxScale={2}
-      minScale={0.4}
+      minScale={0.1}
       initialScale={0.8}
       limitToBounds={false}
     >

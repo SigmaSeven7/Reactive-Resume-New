@@ -188,6 +188,19 @@ export const ResumeCard = ({ resume }: Props) => {
       <ContextMenuTrigger>
         <BaseCard className="space-y-0" onClick={onOpen}>
           <AnimatePresence presenceAffectsLayout>
+            <iframe
+              ref={frameRef}
+              title={resume.title}
+              src="/artboard/preview"
+              scrolling="no"
+              style={{
+                position: "absolute",
+                opacity: 0,
+                pointerEvents: "none",
+                zIndex: -1,
+              }}
+            />
+
             {previewUrl && previewUrl !== "data:," && (
               <div className="relative w-full">
                 <img
