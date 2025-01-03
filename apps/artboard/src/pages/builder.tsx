@@ -42,7 +42,7 @@ export const BuilderLayout = () => {
       centerOnInit
       maxScale={2}
       minScale={0.1}
-      initialScale={0.8}
+      initialScale={0.4}
       limitToBounds={false}
     >
       <TransformComponent
