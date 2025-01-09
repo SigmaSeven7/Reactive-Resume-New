@@ -17,12 +17,24 @@ export default defineConfig({
     appVersion: JSON.stringify(process.env.npm_package_version),
   },
 
+  // server: {
+  //   host: true,
+  //   port: 5173,
+  //   fs: { allow: [searchForWorkspaceRoot(process.cwd())] },
+  // },
+
   server: {
     host: true,
     port: 5173,
     fs: { allow: [searchForWorkspaceRoot(process.cwd())] },
+    hmr: {
+      overlay: true,
+      protocol: "ws",
+      host: "localhost",
+      port: 2467,
+      clientPort: 2467,
+    },
   },
-
   optimizeDeps: {
     esbuildOptions: {
       loader: {

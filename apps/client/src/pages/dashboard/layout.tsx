@@ -1,17 +1,18 @@
 import { SidebarSimple } from "@phosphor-icons/react";
 import { Button, Sheet, SheetClose, SheetContent, SheetTrigger } from "@reactive-resume/ui";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 
+import { useDirection } from "../../context/direction-context";
 import { Sidebar } from "./_components/sidebar";
 
 export const DashboardLayout = () => {
   const [open, setOpen] = useState(false);
-
+  const { dir } = useDirection();
   return (
-    <div>
-      <div className="sticky top-0 z-50 flex items-center justify-between p-4 pb-0 lg:hidden">
+    <div dir={dir} className="flex flex-col lg:flex-row">
+      <div className="sticky top-0 z-50 flex justify-between p-4 pb-0 lg:hidden">
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
             <Button size="icon" variant="ghost" className="bg-background">
@@ -34,16 +35,18 @@ export const DashboardLayout = () => {
       <motion.div
         initial={{ x: -320 }}
         animate={{ x: 0 }}
-        className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-[320px] lg:flex-col"
+        dir={dir}
+        className={`hidden lg:inset-y-0 ${dir === "rtl" ? "lg:left-0" : "lg:right-0"} lg:z-50 lg:flex lg:w-[320px] lg:flex-col`}
       >
         <div className="h-full rounded p-4">
           <Sidebar />
         </div>
       </motion.div>
-
-      <main className="mx-6 my-4 lg:mx-8 lg:pl-[320px]">
-        <Outlet />
-      </main>
+      <div className="flex w-full justify-center lg:justify-start">
+        <main className="mx-6 my-4 w-4/5 lg:mx-12">
+          <Outlet />
+        </main>
+      </div>
     </div>
   );
 };

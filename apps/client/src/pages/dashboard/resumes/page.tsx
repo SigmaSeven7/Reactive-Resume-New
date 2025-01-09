@@ -5,13 +5,14 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 
+import { useDirection } from "../../../context/direction-context";
 import { GridView } from "./_layouts/grid";
 import { ListView } from "./_layouts/list";
-
 type Layout = "grid" | "list";
-
+type Direction = "ltr" | "rtl";
 export const ResumesPage = () => {
   const [layout, setLayout] = useState<Layout>("grid");
+  const { dir } = useDirection();
 
   return (
     <>
@@ -22,6 +23,7 @@ export const ResumesPage = () => {
       </Helmet>
 
       <Tabs
+        dir={dir as Direction}
         value={layout}
         className="space-y-4"
         onValueChange={(value) => {
@@ -49,7 +51,10 @@ export const ResumesPage = () => {
           </TabsList>
         </div>
 
-        <ScrollArea className="h-[calc(100vh-140px)] lg:h-[calc(100vh-88px)]">
+        <ScrollArea
+          dir={dir as Direction}
+          className="h-[calc(100vh-140px)] lg:h-[calc(100vh-88px)]"
+        >
           <TabsContent value="grid">
             <GridView />
           </TabsContent>

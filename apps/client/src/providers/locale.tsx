@@ -16,7 +16,6 @@ type Props = {
 
 export const LocaleProvider = ({ children }: Props) => {
   const userLocale = useAuthStore((state) => state.user?.locale);
-
   useEffect(() => {
     const detectedLocale =
       detect(fromUrl("locale"), fromStorage("locale"), userLocale, defaultLocale) ?? defaultLocale;
@@ -26,6 +25,13 @@ export const LocaleProvider = ({ children }: Props) => {
       void dynamicActivate(detectedLocale);
     } else {
       void dynamicActivate(defaultLocale);
+    }
+
+    const htmlElement = document.querySelector("html");
+    if (htmlElement) {
+      const dir =
+        detectedLocale.startsWith("ar") || detectedLocale.startsWith("he") ? "rtl" : "ltr";
+      htmlElement.dataset.dir = dir;
     }
   }, [userLocale]);
 

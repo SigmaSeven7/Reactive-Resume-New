@@ -45,3 +45,29 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </body>
 </html>
+<!-- <script>
+   const userStateString = localStorage.getItem('auth');
+  let locale = null;
+  let language = null;
+
+  if (userStateString) {
+    try {
+      // Parse the JSON string into a JavaScript object
+      const userState = JSON.parse(userStateString);
+
+      // Extract the locale
+      locale = userState?.state?.user?.locale;
+
+      // Split the locale to get the language code
+      language = locale ? locale.split('-')[0] : null;
+
+      const dir = language === 'ar' || 'he' ? 'rtl' : 'ltr';
+      document.querySelector('html').setAttribute('dir', dir);
+      document.querySelector('html').setAttribute('lang', locale);
+
+    } catch (error) {
+      console.error('Error parsing JSON from local storage:', error);
+    }
+  }
+  // lg:right-0
+</script> -->

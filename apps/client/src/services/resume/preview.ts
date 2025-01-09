@@ -46,7 +46,7 @@ export const useResumePreview = (resume: ResumeData) => {
 
     try {
       // Wait a bit longer to ensure content is fully rendered
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      await new Promise((resolve) => setTimeout(resolve, 0));
 
       const canvas = await html2canvas(iframe.contentDocument.body, {
         scale: 1,
