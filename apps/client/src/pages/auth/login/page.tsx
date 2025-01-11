@@ -64,8 +64,9 @@ export const LoginPage = () => {
           <Button asChild variant="link" className="px-1.5">
             <Link to="/auth/register">
               {t({ message: "Create one now", context: "This is a link to create a new account" })}{" "}
-              <ArrowRight className="ml-1" 
-               style={{ transform: dir === "rtl" ? "rotate(180deg)" : "none" }}
+              <ArrowRight
+                className="ml-1"
+                style={{ transform: dir === "rtl" ? "rotate(180deg)" : "none" }}
               />
             </Link>
           </Button>
