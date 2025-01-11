@@ -64,7 +64,9 @@ import * as ScrollAreaPrimitive from "@radix-ui/react-scroll-area";
 import { cn } from "@reactive-resume/utils";
 import { forwardRef } from "react";
 
-type Direction = "ltr" | "rtl";
+// eslint-disable-next-line @nx/enforce-module-boundaries
+import { useDirection } from "@/client/context/direction-context";
+// type Direction = "ltr" | "rtl";
 
 export const ScrollArea = forwardRef<
   React.ElementRef<typeof ScrollAreaPrimitive.Root>,
@@ -85,10 +87,11 @@ export const ScrollArea = forwardRef<
     ref,
   ) => {
     // const [dir, setDir] = useState<string>("ltr");
-    const htmlElement = document.querySelector("html");
-    const dir: Direction = (localStorage.getItem("dir") ??
-      htmlElement?.dataset.dir ??
-      "ltr") as Direction;
+    // const htmlElement = document.querySelector("html");
+    // const dir: Direction = (localStorage.getItem("dir") ??
+    //   htmlElement?.dataset.dir ??
+    //   "ltr") as Direction;
+    const { dir } = useDirection();
     return (
       <ScrollAreaPrimitive.Root
         ref={ref}

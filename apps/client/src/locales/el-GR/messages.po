@@ -1732,3 +1732,55 @@ msgstr "Μεγέθυνση"
 #: apps/client/src/pages/builder/_components/toolbar.tsx:100
 msgid "Zoom Out"
 msgstr "Σμίκρυνση"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\summary.tsx:25
+msgid "Summary"
+msgstr "Περίληψη"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:89
+msgid "Profiles"
+msgstr "Προφίλ"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:91
+msgid "Experience"
+msgstr "Εμπειρία"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:92
+msgid "Education"
+msgstr "Εκπαίδευση"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:93
+msgid "Skills"
+msgstr "Δεξιότητες"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:94
+msgid "Languages"
+msgstr "Γλώσσες"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:95
+msgid "Awards"
+msgstr "Βραβεία"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:96
+msgid "Certifications"
+msgstr "Πιστοποιήσεις"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:97
+msgid "Interests"
+msgstr "Ενδιαφέροντα"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:98
+msgid "Projects"
+msgstr "Έργα"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:99
+msgid "Publications"
+msgstr "Δημοσιεύσεις"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:100
+msgid "Volunteering"
+msgstr "Εθελοντισμός"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:100
+msgid "References"
+msgstr "Συστάσεις"

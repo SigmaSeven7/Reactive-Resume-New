@@ -6,6 +6,7 @@ import { Link, matchRoutes, Outlet, useLocation } from "react-router-dom";
 import { LocaleSwitch } from "@/client/components/locale-switch";
 import { Logo } from "@/client/components/logo";
 import { ThemeSwitch } from "@/client/components/theme-switch";
+import { useDirection } from "@/client/context/direction-context";
 import { useAuthProviders } from "@/client/services/auth/providers";
 
 import { SocialAuth } from "./_components/social-auth";
@@ -16,7 +17,7 @@ export const AuthLayout = () => {
   const location = useLocation();
   const { providers } = useAuthProviders();
   const isAuthRoute = useMemo(() => matchRoutes(authRoutes, location) !== null, [location]);
-
+  const { dir } = useDirection();
   if (!providers) return null;
 
   // Condition (providers.length === 1) hides the divider if providers[] includes only "email"
@@ -24,8 +25,11 @@ export const AuthLayout = () => {
 
   return (
     // eslint-disable-next-line tailwindcss/enforces-shorthand -- size-screen not implemented yet
-    <div className="flex h-screen w-screen">
-      <div className="relative flex w-full flex-col justify-center gap-y-8 px-12 sm:mx-auto sm:basis-[420px] sm:px-0 lg:basis-[480px] lg:px-12">
+    <div dir={dir} className="flex h-screen w-screen">
+      <div
+        dir={dir}
+        className="relative flex w-full flex-col justify-center gap-y-8 px-12 sm:mx-auto sm:basis-[420px] sm:px-0 lg:basis-[480px] lg:px-12"
+      >
         <div className="flex items-center justify-between">
           <Link to="/" className="size-24">
             <Logo className="-ml-3" size={96} />

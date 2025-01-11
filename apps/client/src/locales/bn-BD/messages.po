@@ -1732,3 +1732,55 @@ msgstr ""
 #: apps/client/src/pages/builder/_components/toolbar.tsx:100
 msgid "Zoom Out"
 msgstr ""
+
+#: apps\client\src\pages\builder\sidebars\left\sections\summary.tsx:25
+msgid "Summary"
+msgstr "সারাংশ"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:89
+msgid "Profiles"
+msgstr "প্রোফাইল"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:91
+msgid "Experience"
+msgstr "অভিজ্ঞতা"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:92
+msgid "Education"
+msgstr "শিক্ষা"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:93
+msgid "Skills"
+msgstr "দক্ষতা"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:94
+msgid "Languages"
+msgstr "ভাষা"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:95
+msgid "Awards"
+msgstr "পুরস্কার"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:96
+msgid "Certifications"
+msgstr "সার্টিফিকেট"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:97
+msgid "Interests"
+msgstr "আগ্রহ"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:98
+msgid "Projects"
+msgstr "প্রকল্প"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:99
+msgid "Publications"
+msgstr "প্রকাশনা"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:100
+msgid "Volunteering"
+msgstr "স্বেচ্ছাসেবা"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:100
+msgid "References"
+msgstr "রেফারেন্স"

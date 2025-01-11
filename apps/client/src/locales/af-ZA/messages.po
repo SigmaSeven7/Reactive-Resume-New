@@ -1732,3 +1732,7 @@ msgstr ""
 #: apps/client/src/pages/builder/_components/toolbar.tsx:100
 msgid "Zoom Out"
 msgstr ""
+
+#: apps\client\src\pages\builder\sidebars\left\sections\summary.tsx:25
+msgid "Summary"
+msgstr "Opsomming"

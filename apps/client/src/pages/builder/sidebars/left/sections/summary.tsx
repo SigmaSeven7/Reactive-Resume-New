@@ -1,3 +1,4 @@
+import { t } from "@lingui/macro";
 import { defaultSections } from "@reactive-resume/schema";
 import { RichInput } from "@reactive-resume/ui";
 import { cn } from "@reactive-resume/utils";
@@ -14,13 +15,14 @@ export const SummarySection = () => {
     // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
     (state) => state.resume.data.sections.summary ?? defaultSections.summary,
   );
+  console.log(section);
 
   return (
     <section id="summary" className="grid gap-y-6">
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-x-4">
           {getSectionIcon("summary")}
-          <h2 className="line-clamp-1 text-3xl font-bold">{section.name}</h2>
+          <h2 className="line-clamp-1 text-3xl font-bold">{t`Summary`}</h2>
         </div>
 
         <div className="flex items-center gap-x-2">

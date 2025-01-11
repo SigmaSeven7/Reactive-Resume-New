@@ -1,3 +1,4 @@
+import { t } from "@lingui/macro";
 import {
   Article,
   Books,
@@ -84,8 +85,26 @@ export const SectionIcon = ({ id, name, icon, ...props }: SectionIconProps) => {
     get(state.resume.data.sections, id, defaultSection),
   ) as SectionWithItem;
 
+  const SECTION_NAME_MAP: Record<SectionKey, string> = {
+    profiles: t`Profiles`,
+    summary: t`Summary`,
+    experience: t`Experience`,
+    education: t`Education`,
+    skills: t`Skills`,
+    languages: t`Languages`,
+    awards: t`Awards`,
+    certifications: t`Certifications`,
+    interests: t`Interests`,
+    projects: t`Projects`,
+    publications: t`Publications`,
+    volunteer: t`Volunteering`,
+    references: t`References`,
+    basics: "",
+    custom: "",
+  };
+
   return (
-    <Tooltip side="right" content={name ?? section.name}>
+    <Tooltip side="right" content={(SECTION_NAME_MAP[id] || name) ?? section.name}>
       <Button size="icon" variant="ghost" className="size-8 rounded-full" {...props}>
         {icon ?? getSectionIcon(id, { size: 14 })}
       </Button>

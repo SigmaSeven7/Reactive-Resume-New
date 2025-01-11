@@ -1732,3 +1732,55 @@ msgstr ""
 #: apps/client/src/pages/builder/_components/toolbar.tsx:100
 msgid "Zoom Out"
 msgstr ""
+
+#: apps\client\src\pages\builder\sidebars\left\sections\summary.tsx:25
+msgid "Summary"
+msgstr "សង្ខេប"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:89
+msgid "Profiles"
+msgstr "ប្រវត្តិរូប"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:91
+msgid "Experience"
+msgstr "បទពិសោធន៍"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:92
+msgid "Education"
+msgstr "ការអប់រំ"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:93
+msgid "Skills"
+msgstr "ជំនាញ"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:94
+msgid "Languages"
+msgstr "ភាសា"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:95
+msgid "Awards"
+msgstr "រង្វាន់"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:96
+msgid "Certifications"
+msgstr "វិញ្ញាបនបត្រ"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:97
+msgid "Interests"
+msgstr "ចំណាប់អារម្មណ៍"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:98
+msgid "Projects"
+msgstr "គម្រោង"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:99
+msgid "Publications"
+msgstr "ការបោះពុម្ពផ្សាយ"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:100
+msgid "Volunteering"
+msgstr "ការស្ម័គ្រចិត្ត"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:100
+msgid "References"
+msgstr "ឯកសារយោង"

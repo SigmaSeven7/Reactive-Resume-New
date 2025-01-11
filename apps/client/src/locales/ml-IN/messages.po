@@ -1732,3 +1732,55 @@ msgstr ""
 #: apps/client/src/pages/builder/_components/toolbar.tsx:100
 msgid "Zoom Out"
 msgstr ""
+
+#: apps\client\src\pages\builder\sidebars\left\sections\summary.tsx:25
+msgid "Summary"
+msgstr "സംഗ്രഹം"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:89
+msgid "Profiles"
+msgstr "പ്രൊഫൈലുകൾ"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:91
+msgid "Experience"
+msgstr "പരിചയം"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:92
+msgid "Education"
+msgstr "വിദ്യാഭ്യാസം"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:93
+msgid "Skills"
+msgstr "കഴിവുകൾ"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:94
+msgid "Languages"
+msgstr "ഭാഷകൾ"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:95
+msgid "Awards"
+msgstr "അവാർഡുകൾ"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:96
+msgid "Certifications"
+msgstr "സർട്ടിഫിക്കറ്റുകൾ"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:97
+msgid "Interests"
+msgstr "താൽപ്പര്യങ്ങൾ"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:98
+msgid "Projects"
+msgstr "പദ്ധതികൾ"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:99
+msgid "Publications"
+msgstr "പ്രസിദ്ധീകരണങ്ങൾ"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:100
+msgid "Volunteering"
+msgstr "സന്നദ്ധപ്രവർത്തനം"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:100
+msgid "References"
+msgstr "റഫറൻസുകൾ"

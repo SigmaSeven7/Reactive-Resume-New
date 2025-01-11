@@ -1709,3 +1709,54 @@ msgstr "Zum dalam"
 msgid "Zoom Out"
 msgstr "Zum keluar"
 
+#: apps\client\src\pages\builder\sidebars\left\sections\summary.tsx:25
+msgid "Summary"
+msgstr "Ringkasan"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:89
+msgid "Profiles"
+msgstr "Profil"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:91
+msgid "Experience"
+msgstr "Pengalaman"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:92
+msgid "Education"
+msgstr "Pendidikan"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:93
+msgid "Skills"
+msgstr "Kemahiran"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:94
+msgid "Languages"
+msgstr "Bahasa"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:95
+msgid "Awards"
+msgstr "Anugerah"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:96
+msgid "Certifications"
+msgstr "Sijil"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:97
+msgid "Interests"
+msgstr "Minat"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:98
+msgid "Projects"
+msgstr "Projek"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:99
+msgid "Publications"
+msgstr "Penerbitan"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:100
+msgid "Volunteering"
+msgstr "Kesukarelawan"
+
+#: apps\client\src\pages\builder\sidebars\left\sections\shared\section-base.tsx:100
+msgid "References"
+msgstr "Rujukan"

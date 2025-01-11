@@ -28,13 +28,16 @@ export const DirectionProvider: React.FC<{ children: React.ReactNode }> = ({ chi
 
   useEffect(() => {
     const htmlElement = document.querySelector("html");
-    const storedDir = localStorage.getItem("direction") as Direction | null;
-    if (storedDir) {
-      setDir(storedDir);
-    } else if (htmlElement) {
-      const dirAttribute = (htmlElement.dataset.dir ?? "ltr") as Direction;
+    const dirAttribute = (htmlElement?.dataset.dir ?? "ltr") as Direction;
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+    if (dirAttribute) {
       setDir(dirAttribute);
       localStorage.setItem("direction", dirAttribute);
+    } else {
+      const storedDir = localStorage.getItem("direction") as Direction | null;
+      if (storedDir) {
+        setDir(storedDir);
+      }
     }
   }, []);
 

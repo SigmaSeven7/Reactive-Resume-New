@@ -6,7 +6,6 @@ import { Copyright } from "@/client/components/copyright";
 import { ThemeSwitch } from "@/client/components/theme-switch";
 
 import { ExportSection } from "./sections/export";
-import { InformationSection } from "./sections/information";
 import { LayoutSection } from "./sections/layout";
 import { NotesSection } from "./sections/notes";
 import { PageSection } from "./sections/page";
@@ -47,7 +46,7 @@ export const RightSidebar = () => {
           <Separator />
           <NotesSection />
           <Separator />
-          <InformationSection />
+          {/* <InformationSection /> */}
           <Separator />
           <Copyright className="text-center" />
         </div>
@@ -120,13 +119,13 @@ export const RightSidebar = () => {
               scrollIntoView("#notes");
             }}
           />
-          <SectionIcon
+          {/* <SectionIcon
             id="information"
             name={t`Information`}
             onClick={() => {
               scrollIntoView("#information");
             }}
-          />
+          /> */}
         </div>
 
         <ThemeSwitch size={14} />

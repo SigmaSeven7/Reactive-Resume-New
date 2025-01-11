@@ -23,6 +23,7 @@ import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import { z } from "zod";
 
+import { useDirection } from "@/client/context/direction-context";
 import { useLogin } from "@/client/services/auth";
 import { useFeatureFlags } from "@/client/services/feature";
 
@@ -31,7 +32,7 @@ type FormValues = z.infer<typeof loginSchema>;
 export const LoginPage = () => {
   const { login, loading } = useLogin();
   const { flags } = useFeatureFlags();
-
+  const { dir } = useDirection();
   const formRef = useRef<HTMLFormElement>(null);
   usePasswordToggle(formRef);
 
@@ -63,7 +64,9 @@ export const LoginPage = () => {
           <Button asChild variant="link" className="px-1.5">
             <Link to="/auth/register">
               {t({ message: "Create one now", context: "This is a link to create a new account" })}{" "}
-              <ArrowRight className="ml-1" />
+              <ArrowRight className="ml-1" 
+               style={{ transform: dir === "rtl" ? "rotate(180deg)" : "none" }}
+              />
             </Link>
           </Button>
         </h6>

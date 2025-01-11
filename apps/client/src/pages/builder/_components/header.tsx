@@ -1,5 +1,5 @@
 import { t } from "@lingui/macro";
-import { HouseSimple, Lock, SidebarSimple } from "@phosphor-icons/react";
+import { HouseSimple, Lock, Palette, UserCircle } from "@phosphor-icons/react";
 import { Button, Tooltip } from "@reactive-resume/ui";
 import { cn } from "@reactive-resume/utils";
 import { Link } from "react-router-dom";
@@ -39,7 +39,7 @@ export const BuilderHeader = () => {
             onToggle("left");
           }}
         >
-          <SidebarSimple />
+          <UserCircle size={24} />
         </Button>
 
         <div className="flex items-center justify-center gap-x-1 lg:mx-auto">
@@ -68,7 +68,8 @@ export const BuilderHeader = () => {
             onToggle("right");
           }}
         >
-          <SidebarSimple className="-scale-x-100" />
+          <Palette size={24} />
+          {/* <SidebarSimple className="-scale-x-100" /> */}
         </Button>
       </div>
     </div>

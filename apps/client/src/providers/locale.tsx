@@ -26,7 +26,7 @@ export const LocaleProvider = ({ children }: Props) => {
     } else {
       void dynamicActivate(defaultLocale);
     }
-
+    console.log(detectedLocale.startsWith("ar") || detectedLocale.startsWith("he"));
     const htmlElement = document.querySelector("html");
     if (htmlElement) {
       const dir =

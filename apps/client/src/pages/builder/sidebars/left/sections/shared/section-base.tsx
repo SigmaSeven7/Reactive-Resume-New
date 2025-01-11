@@ -85,6 +85,24 @@ export const SectionBase = <T extends SectionItem>({ id, title, description }: P
     setValue(`sections.${id}.items[${index}].visible`, !visible);
   };
 
+  const SECTION_NAME_MAP: Record<SectionKey, string> = {
+    profiles: t`Profiles`,
+    summary: t`Summary`,
+    experience: t`Experience`,
+    education: t`Education`,
+    skills: t`Skills`,
+    languages: t`Languages`,
+    awards: t`Awards`,
+    certifications: t`Certifications`,
+    interests: t`Interests`,
+    projects: t`Projects`,
+    publications: t`Publications`,
+    volunteer: t`Volunteering`,
+    references: t`References`,
+    basics: "",
+    custom: "",
+  };
+
   return (
     <motion.section
       id={id}
@@ -97,7 +115,10 @@ export const SectionBase = <T extends SectionItem>({ id, title, description }: P
         <div className="flex items-center gap-x-4">
           {getSectionIcon(id)}
 
-          <h2 className="line-clamp-1 text-3xl font-bold">{section.name}</h2>
+          <h2 className="line-clamp-1 text-3xl font-bold">
+            {" "}
+            {SECTION_NAME_MAP[id] || section.name}
+          </h2>
         </div>
 
         <div className="flex items-center gap-x-2">

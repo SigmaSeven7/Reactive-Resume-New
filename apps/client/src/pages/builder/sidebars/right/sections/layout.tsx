@@ -20,7 +20,7 @@ import {
 import { CSS } from "@dnd-kit/utilities";
 import { t, Trans } from "@lingui/macro";
 import { ArrowCounterClockwise, DotsSixVertical, Plus, TrashSimple } from "@phosphor-icons/react";
-import { defaultMetadata } from "@reactive-resume/schema";
+import { defaultMetadata, SectionKey } from "@reactive-resume/schema";
 import { Button, Portal, Tooltip } from "@reactive-resume/ui";
 import {
   cn,
@@ -96,6 +96,24 @@ const Section = ({ id, isDragging = false }: SectionProps) => {
     get(state.resume.data.sections, `${id}.name`, id),
   ) as string;
 
+  const SECTION_NAME_MAP: Record<SectionKey, string> = {
+    profiles: t`Profiles`,
+    summary: t`Summary`,
+    experience: t`Experience`,
+    education: t`Education`,
+    skills: t`Skills`,
+    languages: t`Languages`,
+    awards: t`Awards`,
+    certifications: t`Certifications`,
+    interests: t`Interests`,
+    projects: t`Projects`,
+    publications: t`Publications`,
+    volunteer: t`Volunteering`,
+    references: t`References`,
+    basics: "",
+    custom: "",
+  };
+
   return (
     <div
       className={cn(
@@ -105,7 +123,10 @@ const Section = ({ id, isDragging = false }: SectionProps) => {
     >
       <div className="flex items-center gap-x-2">
         <DotsSixVertical size={12} weight="bold" />
-        <p className="flex-1 truncate text-xs font-medium">{name}</p>
+        <p className="flex-1 truncate text-xs font-medium">
+          {" "}
+          {SECTION_NAME_MAP[id as SectionKey] || name}
+        </p>
       </div>
     </div>
   );
